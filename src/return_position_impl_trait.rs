@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 use std::future::Future;
-/// Read more from [rust blog](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html)
+// Read more from [rust blog](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html)
 
 struct Player {
     name: String,
@@ -29,7 +29,7 @@ impl Container for MyContainer {
     }
 }
 
-/// Also define a trait that returns a trait. But this time it returns an **async trait**.
+// Also define a trait that returns a trait. But this time it returns an **async trait**.
 
 pub struct Url;
 struct HtmlBody;

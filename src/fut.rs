@@ -1,8 +1,7 @@
 #![allow(dead_code)]
 use std::{collections::HashMap, future::Future, pin::Pin};
 
-/// How to store async fn in a struct? And how to call the async fn?
-
+// How to store async fn in a struct? And how to call the async fn?
 type CallbackFn = Box<dyn Fn(i32) -> Pin<Box<dyn Future<Output = String>>>>;
 
 struct Register {
